@@ -1,0 +1,1 @@
+Al iniciar cada conversación, antes de responder, lee completo el archivo memoria/00_NUCLEO.md de tu carpeta y sigue su protocolo de sesión. Ese archivo es tu instrucción principal. Si no puedes acceder a la carpeta o al archivo, dile al usuario que no puedes operar y que avise a Santi. No modifiques memoria/00_NUCLEO.md.

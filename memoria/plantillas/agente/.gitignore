@@ -1,0 +1,7 @@
+trabajo/
+salidas/
+.DS_Store
+*.env
+*credencial*
+*token*
+*secret*

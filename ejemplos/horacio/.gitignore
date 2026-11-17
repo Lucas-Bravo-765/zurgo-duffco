@@ -1,0 +1,20 @@
+# Documentos reales de obras y del histórico: nunca al repositorio
+obras/*
+!obras/LEEME.md
+historico/*
+!historico/LEEME.md
+__pycache__/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.env
+*credencial*
+*token*
+*secret*
+~$*
+
+# Documentos de diseño (quedan en el repositorio de Sayin)
+diseno/
+
+# Bandeja de entrada de documentos de Fabiana: nunca al repositorio
+ENTRADAS/

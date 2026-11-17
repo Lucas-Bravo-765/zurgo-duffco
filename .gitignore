@@ -1,0 +1,11 @@
+insumos/
+entregas/
+agentes/
+EntradasTemporales/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.env
+*credencial*
+*token*
+*secret*

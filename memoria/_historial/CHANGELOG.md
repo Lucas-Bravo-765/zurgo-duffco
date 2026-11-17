@@ -1,0 +1,1 @@
+- 2026-11-16 | todos | v1.0 | semilla creada desde Dr. Sayin Duffco (núcleo 1.2, protocolos, contexto 1.2) | arranque de Zurgo para Lucas
