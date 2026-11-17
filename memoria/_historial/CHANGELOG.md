@@ -1,1 +1,2 @@
 - 2026-11-16 | todos | v1.0 | semilla creada desde Dr. Sayin Duffco (núcleo 1.2, protocolos, contexto 1.2) | arranque de Zurgo para Lucas
+- 2026-11-16 | memoria/00_NUCLEO.md | v2.0 | sección 2 (perfil de Lucas) completada con sus respuestas de la primera activación | reemplazar los [P] de la semilla; nivel D aprobado por Lucas
