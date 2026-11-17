@@ -1,7 +1,7 @@
 # CONTEXTO DUFFCO
 
 Archivo de conocimiento permanente de Dr. Sayin Duffco (copia para Zurgo al 2026-11-16; las novedades llegan por los reportes de Santi en Sandia).
-Versión: 1.2 | Fecha: 2026-11-16 | Autor: Sayin (base) + Santi (validación pendiente)
+Versión: 1.3 | Fecha: 2026-11-16 | Autor: Sayin (base) + Santi (validación pendiente)
 
 ---
 
@@ -38,13 +38,15 @@ Versión: 1.2 | Fecha: 2026-11-16 | Autor: Sayin (base) + Santi (validación pen
 ### Personas de contacto del proyecto
 | Persona | Rol en el proyecto | Conf. |
 |---|---|---|
-| Fabiana | Lleva el proceso de pólizas de garantía, desde la adjudicación hasta la entrega al MOP; más de 4 años en la empresa. Usuaria del primer agente. Perfil en `usuarios/fabiana.md` | [V] |
+| Fabiana Pañella | Gerente de Administración. Lleva el proceso de pólizas de garantía, desde la adjudicación hasta la entrega al MOP; más de 4 años en la empresa. Usuaria del primer agente. Perfil en `usuarios/fabiana.md` | [V] |
 | Catalina | Trabaja frecuentemente con Santi; fuente sobre licitaciones y Mercado Público | [V] |
 
 ### Equipo de implementación (no es personal de Duffco)
 | Persona | Rol | Conf. |
 |---|---|---|
 | Lucas | Colaborador de Santi desde 2026-11-12; trabaja procesos distintos a los de Santi con su propio agente constructor. Coordinación solo por el repo `Sandia`. Puede ver todo lo que ve Santi; usa su cuenta personal de Claude (asiento en el plan Team de Duffco por evaluar). Catalina autorizó su acceso a documentos de Duffco mientras se prueba esta forma de trabajo | [V] (según Santi, 2026-11-16) |
+
+- GitHub de Duffco: organización `duffco-spa` (owner Santi), un repositorio privado por agente entregado [V, bienvenida de Santi, 16-11].
 
 **Lectura de Sayin:** empresa joven (6 años) con crecimiento rápido, dependencia casi total del MOP como mandante, y operación descentralizada (oficina central en Santiago, obras en el norte grande, centro y sur). Esto implica que los procesos administrativos y documentales se coordinan a distancia entre oficina central y faenas. [H]
 
@@ -322,3 +324,4 @@ Normativa y MOP:
 
 - v1.0 (2026-10-12): versión inicial construida por investigación pública. Pendiente validación de Santi en todas las filas [P] y [H].
 - v1.1 (2026-10-14): personas de contacto (Fabiana, Catalina), Mercado Público como fuente principal y su API, plan Claude Team, corredora Conosur. Aprobado por Santi.
+- v1.3 (2026-11-16, Zurgo): cargo de Fabiana Pañella (Gerente de Administración) y organización `duffco-spa`, desde la bienvenida de Santi; confirmados [V] por Santi en Sandia. Aprobado por Lucas.
