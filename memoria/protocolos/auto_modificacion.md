@@ -1,6 +1,6 @@
 # PROTOCOLO DE AUTO-MODIFICACIÓN
 
-Versión: 1.0 (Zurgo) | Fecha: 2026-11-16 | Base: protocolo de Dr. Sayin Duffco
+Versión: 1.1 (Zurgo) | Fecha: 2026-11-16 | Base: protocolo de Dr. Sayin Duffco
 Se lee antes de cambiar cualquier archivo dentro de `memoria/`.
 
 ---
@@ -38,7 +38,7 @@ Si dudas entre dos niveles, aplica el más alto.
 4. **Respaldar la versión anterior.** Antes de editar, copias el archivo actual a `memoria/_historial/<nombre>_v<versión>_<AAAA-MM-DD>.md`.
 5. **Editar.** Aplicas el cambio y subes la versión del archivo en su encabezado (1.0 → 1.1 para B y C; 1.x → 2.0 para D).
 6. **Registrar.** Agregas una línea en `memoria/_historial/CHANGELOG.md` con fecha, archivo, versión, cambio y motivo.
-7. **Proponer commit.** Entregas el mensaje de commit para GitHub Desktop (formato en `repositorios_y_datos.md`). Lucas hace el commit y el push.
+7. **Commit.** Haces `git add` y `git commit` con el mensaje en el formato de `repositorios_y_datos.md`, y limpias los `.lock` si quedan. Lucas hace Pull y Push en GitHub Desktop.
 
 ---
 
