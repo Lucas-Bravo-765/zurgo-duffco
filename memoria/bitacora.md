@@ -4,12 +4,14 @@ Una entrada por sesión, solo con el delta: decisiones, archivos tocados, pendie
 
 ---
 
-## 2026-11-16 · Sesión 1 (primera activación, parcial)
+## 2026-11-16 · Sesión 1 (primera activación)
 
 **Decisiones**
 - Repo `zurgo-duffco` publicado como privado en la cuenta `Lucas-Bravo-765`. El primer intento quedó en la cuenta equivocada (`LucasPython01`); su `.git` se movió a `ZURGO-DUFFCO/_git_viejo_LucasPython01` y el repo remoto viejo sigue en GitHub (borrarlo después).
 - Perfil de Lucas completado (núcleo 2.0, nivel D aprobado por Lucas).
 - Lucas no participa del proceso 2 (de Santi): la regla 11 se mantiene sin cambios.
+- Sandia clonado en `ZURGO-DUFFCO/Sandia` (cuenta `Lucas-Bravo-765`). Leídos: bienvenida, estado inicial y "Hola, Zurgo" de Sayin.
+- Primer reporte en Sandia: `duffco/lucas/2026-11-16_general_presentacion-zurgo.md` (presentación, perfil de Lucas con su acuerdo, 5 preguntas a Santi, inconsistencia de commits a Sayin).
 
 **Archivos creados o modificados**
 - Carpetas creadas: `disenos/`, `agentes/`, `insumos/`, `entregas/`, `EntradasTemporales/`.
@@ -19,15 +21,16 @@ Una entrada por sesión, solo con el delta: decisiones, archivos tocados, pendie
 **Pendientes**
 - [ ] Lucas y Santi: definir el primer proceso de Lucas y su número.
 - [ ] Lucas y Santi: coordinar una reunión con Duffco para que Lucas se integre al terreno.
-- [ ] Lucas: conectar el clon de Sandia hecho con `Lucas-Bravo-765` (Santi debe invitar a esa cuenta). Zurgo: leer la bienvenida y escribir su primer reporte en `duffco/lucas/` (incluye pedir a Santi el README original).
+- [ ] Esperar respuesta de Santi y Sayin a las preguntas del primer reporte (README original, plantilla de Gantt, briefing del proceso 2 como observador).
+- [ ] Lucas: cambiar la carpeta conectada `Documents/SANDIA` (no existe) por `ZURGO-DUFFCO/Sandia`, o quitarla, en el Project de Claude.
 - [ ] Lucas: revisar que su cuenta de Claude no use los chats para entrenar modelos.
 - [ ] Lucas: confirmar si iCloud sincroniza "Escritorio y Documentos"; si sí, mover la carpeta fuera de `Documents`.
-- [ ] Lucas: confirmar la identidad de git en GitHub Desktop (el commit inicial salió como `LucasPython01`).
-- [ ] Más adelante: borrar el repo viejo `LucasPython01/zurgo-duffco` y la carpeta `_git_viejo_LucasPython01`.
+- [x] Identidad de git corregida: desde el segundo commit firma `Lucas-Bravo-765` (el commit inicial queda como `LucasPython01`).
+- [ ] Más adelante: borrar el repo viejo `LucasPython01/zurgo-duffco`, la carpeta `_git_viejo_LucasPython01`, la descarga `ZURGO-DUFFCO/Sandia-main` y el primer clon de Sandia (probablemente en `Documents/GitHub/Sandia`).
 - [ ] Zurgo: proponer (nivel C) aclarar quién hace el commit: el núcleo sección 6 dice Zurgo, `auto_modificacion.md` paso 7 dice Lucas.
 
 **Próximo paso**
-- Terminar la primera activación: Sandia (bienvenida y primer reporte).
+- Lucas y Santi definen el primer proceso de Lucas y coordinan la reunión con Duffco.
 
 ---
 
