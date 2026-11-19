@@ -1,7 +1,7 @@
 # CONTEXTO DUFFCO
 
 Archivo de conocimiento permanente de Dr. Sayin Duffco (copia para Zurgo al 2026-11-16; las novedades llegan por los reportes de Santi en Sandia).
-Versión: 1.3 | Fecha: 2026-11-16 | Autor: Sayin (base) + Santi (validación pendiente)
+Versión: 1.4 | Fecha: 2026-11-18 | Autor: Sayin (base) + Santi (validación pendiente)
 
 ---
 
@@ -40,6 +40,8 @@ Versión: 1.3 | Fecha: 2026-11-16 | Autor: Sayin (base) + Santi (validación pen
 |---|---|---|
 | Fabiana Pañella | Gerente de Administración. Lleva el proceso de pólizas de garantía, desde la adjudicación hasta la entrega al MOP; más de 4 años en la empresa. Usuaria del primer agente. Perfil en `usuarios/fabiana.md` | [V] |
 | Catalina | Trabaja frecuentemente con Santi; fuente sobre licitaciones y Mercado Público | [V] |
+| Nicolás Paredes | Arma la propuesta económica de las licitaciones (APU, formulario de presupuesto, E.2) en CTBudget; usuario del proceso 2 de Santi. Figura como responsable en CTBudget. Cargo, fluencia en IA, equipo y asiento Team: [P] | [V] nombre y rol (reporte de Santi, 16-11) |
+| Julio Dufflocq | Define el precio de cada oferta: entrega un Excel con las partidas del itemizado oficial, una columna de costo estimado y otra de precio de venta unitario objetivo, del que parte la propuesta económica. Cargo: [P] | [V] rol (reporte de Santi, 16-11) |
 
 ### Equipo de implementación (no es personal de Duffco)
 | Persona | Rol | Conf. |
@@ -234,7 +236,20 @@ Este es el dominio del primer caso de uso discutido (revisión de pólizas antes
 | Biblioteca DGOP | Repositorio de instructivos vigentes |
 | Confirming BancoEstado | Herramienta de financiamiento difundida por la DGOP como alternativa al factoring |
 
-Sistemas internos de Duffco (ERP, gestión documental, correo, Drive o SharePoint, software de presupuestos): [P]. Es información crítica para diseñar agentes que trabajen con archivos locales.
+### 7.1 Sistemas internos de Duffco
+
+**CTBudget (software de presupuestos)** [V, reportes de Santi del 16 al 18-11]
+- CTBudget para Windows, versión 21.xx, sobre el OneDrive empresarial de Duffco. Lo usa Nicolás Paredes para los APU de las ofertas.
+- Su base nativa es un archivo `.CTBX` de texto plano, legible sin el programa: unos 1.349 registros entre insumos (código, unidad, precio, fecha) y APU (lista de insumos con cantidad por unidad de obra). Coma decimal, fechas en serial de Excel, algunas cantidades escritas como expresiones (`1/500`), APU anidados (el CD se calcula de forma recursiva). Prefijos de insumos: `1O` mano de obra, `2M` materiales, `3E` equipos.
+- La biblioteca está sucia: 722 códigos de APU con duplicados en formatos distintos, un mismo código usado para trabajos distintos, APU cuyo material no calza con el nombre, plantillas con precio 0 y registros de prueba. Precios de insumos mayoritariamente de 2021 a 2023. Faltan APU para algunos trabajos (retiro manual de basuras, reciclado de carpetas granulares, hormigón G40, emulsión con polímeros). Cualquier agente que la use necesita normalizar códigos y una regla de selección [P].
+- Decisión de Santi (18-11) para su proceso 2: la biblioteca la mantiene CTBudget y el agente solo lee el `.CTBX`, nunca lo escribe.
+- Tiene una fecha fija configurada que se imprime en los APU (las ofertas de nov. 2026 salieron con "26-08-2025") [V].
+
+**Propuesta económica que se presenta al MOP** [V, caso A-345]
+- Cuatro documentos: carta oferta (plantilla MOP, monto en números y palabras, garantía en UF), formulario de presupuesto (plantilla Excel MOP con el itemizado oficial), documento de APU (uno por partida) y formulario E.2 de gastos generales y utilidades.
+- GG y UT se aplican sobre el CD de cada partida, hoy 90% y 10% (configurables). El E.2 reparte el GG total en rubros mensuales por el plazo de la obra y debe cuadrar al peso con el GG de los APU. IVA 19% sobre el neto; la proforma va aparte y la fija el MOP.
+
+Otros sistemas internos (ERP, gestión documental, correo, Drive o SharePoint): [P]. Es información crítica para diseñar agentes que trabajen con archivos locales.
 
 ---
 
@@ -290,7 +305,7 @@ Prioridad alta:
 Prioridad media:
 - [ ] Monto y estado de los contratos vigentes (en especial Cuesta Chaca Sur, Calama, San Pedro de Atacama).
 - [ ] Consorcios en que participa Duffco.
-- [ ] Software interno (ERP, presupuestos, control de flota).
+- [ ] Software interno (ERP, control de flota). Presupuestos: CTBudget [V], ver 7.1.
 - [ ] Contacto directo de Santi en el directorio y patrocinador interno del proyecto.
 
 ---
@@ -325,3 +340,4 @@ Normativa y MOP:
 - v1.0 (2026-10-12): versión inicial construida por investigación pública. Pendiente validación de Santi en todas las filas [P] y [H].
 - v1.1 (2026-10-14): personas de contacto (Fabiana, Catalina), Mercado Público como fuente principal y su API, plan Claude Team, corredora Conosur. Aprobado por Santi.
 - v1.3 (2026-11-16, Zurgo): cargo de Fabiana Pañella (Gerente de Administración) y organización `duffco-spa`, desde la bienvenida de Santi; confirmados [V] por Santi en Sandia. Aprobado por Lucas.
+- v1.4 (2026-11-18, Zurgo): Nicolás Paredes y Julio Dufflocq en personas de contacto; nueva sección 7.1 (CTBudget, formato `.CTBX`, estado de la biblioteca, documentos de la propuesta económica). Fuente: reportes de Santi del 16, 17 y 18-11 en Sandia. Aprobado por Lucas.

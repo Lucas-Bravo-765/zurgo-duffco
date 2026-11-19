@@ -2,3 +2,4 @@
 - 2026-11-16 | memoria/00_NUCLEO.md | v2.0 | sección 2 (perfil de Lucas) completada con sus respuestas de la primera activación | reemplazar los [P] de la semilla; nivel D aprobado por Lucas
 - 2026-11-16 | memoria/contexto_duffco.md | v1.3 | cargo de Fabiana Pañella y organización duffco-spa | datos de la bienvenida confirmados [V] por Santi; nivel B aprobado por Lucas
 - 2026-11-16 | memoria/protocolos/auto_modificacion.md | v1.1 | paso 7: Zurgo hace git add y commit; Lucas hace Pull y Push | alinear con núcleo §6 y repositorios_y_datos.md; nivel C aprobado por Lucas
+- 2026-11-18 | memoria/contexto_duffco.md | v1.4 | Nicolás Paredes y Julio Dufflocq; sección 7.1 (CTBudget, .CTBX, biblioteca, propuesta económica) | reportes de Santi del 16 al 18-11 en Sandia; nivel B aprobado por Lucas
